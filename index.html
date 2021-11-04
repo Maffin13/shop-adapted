@@ -13,6 +13,9 @@
     <header class="header position-relative">
       <div class="nav__bg">
         <nav class="navbar navbar-expand-lg">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="header__toggler-icon fas"></span>
+          </button>
           <div class="container">
             <div class="container-fluid">
               <div class="collapse navbar-collapse justify-content-end d-flex" id="navbarNavDropdown">
@@ -29,18 +32,15 @@
                       </li> 
                   </ul>
                 </div>
-                <ul class="header__nav-list d-flex">
-                  <li>
-                    <span class="nav__icon-phone fas"></span>
-                  <a class="nav-link" aria-current="page" href="#">(907) 555-0101</a>
+                <ul class="header__nav-list d-flex mb-0">
+                  <li class="icon-link">
+                  <a class="nav-link" aria-current="page" href="#"><span class="nav__icon-phone fas"></span>(907) 555-0101</a>
                   </li>
-                  <li>
-                    <span class="nav__icon-sign fal"></span>
-                    <a class="nav-link" href="#">Sign in</a>
+                  <li class="icon-link">
+                    <a class="nav-link" href="#"><span class="nav__icon-sign fal"></span>Sign in</a>
                   </li>
-                  <li>
-                    <span class="nav__icon-cart fal"></span>
-                    <a class="nav-link" href="#">Cart</a>
+                  <li class="icon-link">
+                    <a class="nav-link" href="#"><span class="nav__icon-cart fal"></span>Cart</a>
                   </li>
                 </ul>
               </div>
@@ -171,8 +171,8 @@
               <p class="learn__content-percent">-57%</p>
             </div>
               <div class="learn__content">
-                <h2 class="learn__content-description">Suunto SS050143000</h2>
-                <p class="learn__content-price">70$</p>
+                <h2 class="learn__content-description mb-0">Suunto SS050143000</h2>
+                <p class="learn__content-price mb-0">70$</p>
               </div>
           </div>
         </div>
@@ -181,34 +181,34 @@
           <div class="main__item-content">
             <div class="content__title">
               <p class="learn__content-percent">-30%</p>
-              <div>
-                <h2 class="learn__content-description">Airpods 2.1</h2>
-                <p class="learn__content-price">95$</p>
+            </div>
+              <div class="learn__content">
+                <h2 class="learn__content-description mb-0">Airpods 2.1</h2>
+                <p class="learn__content-price mb-0">95$</p>
               </div>
             </div>
-          </div>
         </div>
         <div class="main__learn-item">
           <img src="images/learn-img3.png" alt="">
           <div class="main__item-content">
-            <div class="content__title">
-              <p class="learn__content-percent">-20%</p>
-              <div>
-                <h2 class="learn__content-description">Xiaomi Mi Power Bank 2s 10000</h2>
-                <p class="learn__content-price">9$</p>
+              <div class="learn__content">
+                <h2 class="learn__content-description mb-0">Xiaomi Mi Power Bank 2s 10000</h2>
+                <p class="learn__content-price mb-0">9$</p>
               </div>
-            </div>
+              <div class="content__title">
+                <p class="learn__content-percent">-20%</p>
+              </div>
           </div>
         </div>
         <div class="main__learn-item">
           <img src="images/learn-img4.png" alt="">
           <div class="main__item-content">
+              <div class="learn__content mb-0">
+                <h2 class="learn__content-description mb-0">Remax RP-W1 White</h2>
+                <p class="learn__content-price mb-0">11$</p>
+              </div>
             <div class="content__title">
               <p class="learn__content-percent">-10%</p>
-              <div>
-                <h2 class="learn__content-description">Remax RP-W1 White</h2>
-                <p class="learn__content-price">11$</p>
-              </div>
             </div>
           </div>
         </div>
@@ -217,6 +217,131 @@
       <button type="button" class="main__btn">LEARN MORE</button>
     </div>
 
+    <div class="main__cellphone">
+      <div class="container">
+        <h2 class="main__title">Cell Phone</h2>
+        <div class="main__cellphone-items d-flex">
+          <div class="main__cellphone-item">
+            <img src="images/cell-item1.png" alt="" class="main__phone-img">
+            <div class="main__phone-title">
+              <h2 class="main__text">IPhone 12 Pro Max 128GB (Gray)</h2>
+              <p class="main__price">1300$</p>
+            </div>
+          </div>
+          <div class="main__cellphone-item">
+            <img src="images/cell-item2.png" alt="" class="main__phone-img">
+            <div class="main__phone-title">
+              <h2 class="main__text">IPhone 11 Pro 128GB (Yellow)</h2>
+              <p class="main__price">700$</p>
+            </div>
+          </div>
+          <div class="main__cellphone-item">
+            <img src="images/cell-item3.png" alt="" class="main__phone-img">
+            <div class="main__phone-title">
+              <h2 class="main__text">IPhone 12 Pro 256 GB (Blue)</h2>
+              <p class="main__price">1500$</p>
+            </div>
+          </div>
+          <div class="main__cellphone-item">
+            <img src="images/cell-item4.png" alt="" class="main__phone-img">
+            <div class="main__phone-title">
+              <h2 class="main__text">IPhone 11 Pro 256 GB (Red)</h2>
+              <p class="main__price">850$</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main__button">
+      <button type="button" class="main__btn">LEARN MORE</button>
+    </div>
+    <div class="main__comp">
+      <div class="container">
+        <h2 class="main__title">Computers & Laptop</h2>
+        <div class="main__comp-items d-flex">
+          <div class="main__comp-item">
+            <img src="images/comp-item1.png" alt="" class="main__phone-img">
+            <div class="main__comp-title">
+              <h2 class="main__text">Lenovo IdeaPad L3 15IML05</h2>
+              <p class="main__price">1350$</p>
+            </div>
+          </div>
+          <div class="main__comp-item">
+            <img src="images/comp-item2.png" alt="" class="main__phone-img">
+            <div class="main__comp-title">
+              <h2 class="main__text">Dream Machines G1650Ti-15UA65</h2>
+              <p class="main__price">1430$</p>
+            </div>
+          </div>
+          <div class="main__comp-item">
+            <img src="images/comp-item3.png" alt="" class="main__phone-img">
+            <div class="main__comp-title">
+              <h2 class="main__text">Apple MacBook Air 13" 2020</h2>
+              <p class="main__price">1723$</p>
+            </div>
+          </div>
+          <div class="main__comp-item">
+            <img src="images/comp-item4.png" alt="" class="main__phone-img">
+            <div class="main__comp-title">
+              <h2 class="main__text">Dream Machines 15UA51</h2>
+              <p class="main__price">1200$</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main__button">
+      <button type="button" class="main__btn">LEARN MORE</button>
+    </div>
+    
+    <div class="main__about-playstation position-relative">
+      <div class="main__play-img">
+        <img src="images/playstation.png" alt="" class="playstation-img">
+      </div>
+      <div class="main__play-title position-absolute">
+        <img src="images/play-sign.png" alt="">
+        <h2 class="play__text">PlayStation 5 Console</h2>
+        <a href="" class="play__link">WATCH NOW</a>
+      </div>
+    </div>
+    <div class="main__seller">
+      <div class="container">
+        <h2 class="main__title">Top seller</h2>
+        <div class="main__seller-items d-flex">
+          <div class="main__seller-item">
+            <img src="images/seller1.png" alt="" class="main__phone-img">
+            <div class="main__seller-title">
+              <h2 class="main__text">Smart Watch W34 | ZM (White)</h2>
+              <p class="main__price">29$</p>
+            </div>
+          </div>
+          <div class="main__seller-item">
+            <img src="images/seller2.png" alt="" class="main__phone-img">
+            <div class="main__seller-title">
+              <h2 class="main__text">AirPods 2.1</h2>
+              <p class="main__price">135$</p>
+            </div>
+          </div>
+          <div class="main__seller-item">
+            <img src="images/seller3.png" alt="" class="main__phone-img">
+            <div class="main__seller-title">
+              <h2 class="main__text">Smart Watch W34 | ZM (Black)</h2>
+              <p class="main__price">29$</p>
+            </div>
+          </div>
+          <div class="main__seller-item">
+            <img src="images/seller4.png" alt="" class="main__phone-img">
+            <div class="main__seller-title">
+              <h2 class="main__text">Coffee machine VITEK VT-1526</h2>
+              <p class="main__price">78$</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main__button">
+      <button type="button" class="main__btn">LEARN MORE</button>
+    </div>
     </div>
  </main>
 
