@@ -8,7 +8,12 @@
     body {
         background: var(--primary-background);
     }
-
+    .header__nav-img::before{
+        content: url('../images/Logo-dark.png');
+    }
+    .play__about-logo::before{
+        content: url('../images/play-sign-dark.png');
+    }
     .nav__bg {
         background: var(--black-background);
     }
@@ -44,8 +49,16 @@
     .carousel-indicators [data-bs-target] {
         background: #ABABAB;
     }
-    .main__phone-img{
+    .main__phone-img, .playstation-img, .header__content-img{
         background: radial-gradient(45% 10% at 51% 68%, rgba(255, 255, 255, 0.2) 47%, rgba(49, 49, 49, 0) 100%);
+    }
+    .main__content-icon:hover::before{
+        color: var(--primary-text-color);
+        opacity: 1;
+    }
+    .main__content-icon::before{
+        opacity: 0;
+        transition: 0.5s;
     }
     .main__about-playstation{
         background: none;
@@ -58,5 +71,6 @@
 @media(max-width:1400px){
     .main__learn-items, .main__comp-items, .main__cellphone-items, .main__seller-items{
         flex-wrap: wrap;
+        justify-content: space-between;
     }
 }
