@@ -1,0 +1,62 @@
+@media(prefers-color-scheme:dark) {
+    :root {
+        --primary-background: #313131;
+        --primary-text-color: #FFFFFF;
+        --black-background: #0C0C0C;
+    }
+
+    body {
+        background: var(--primary-background);
+    }
+
+    .nav__bg {
+        background: var(--black-background);
+    }
+    .dropdown-menu, .footer__bg{
+        background: var(--black-background);
+    }
+    
+    .header__button {
+        font-size: 14px;
+        line-height: 19px;
+        color: var(--primary-text-color);
+        border-color: var(--white-color);
+        font-size: 17px;
+    }
+
+    .header__button::before {
+        content: '\f002';
+    }
+
+    .header__input {
+        background-color: var(--primary-background);
+        color: #BBBBBB;
+    }
+    .header__items-link, .drop__content-item, .drop__content-itemss, .header__content-title, .main__title, .main__text, .main__price, .main__content-icon, .play__text {
+        color: var(--primary-text-color);
+    }
+    .header__items-link:hover, .drop__content-item:hover, .drop__content-itemss:hover{
+        color: var(--primary-text-color);
+    }
+    .header__content-link, .main__btn, .main__content-link, .play__link{
+        border: 1px solid white;
+    }
+    .carousel-indicators [data-bs-target] {
+        background: #ABABAB;
+    }
+    .main__phone-img{
+        background: radial-gradient(45% 10% at 51% 68%, rgba(255, 255, 255, 0.2) 47%, rgba(49, 49, 49, 0) 100%);
+    }
+    .main__about-playstation{
+        background: none;
+    }
+    
+    .carousel-indicators [data-bs-target].active {
+        background: var(--primary-text-color-color);
+    }
+}
+@media(max-width:1400px){
+    .main__learn-items, .main__comp-items, .main__cellphone-items, .main__seller-items{
+        flex-wrap: wrap;
+    }
+}

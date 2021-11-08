@@ -58,6 +58,9 @@ body {
     color: var(--white-color);
 }
 
+.header__button::before{
+    content: '\f002';
+}
 .header__content-link {
     background: var(--black-color);
     color: var(--white-color);
@@ -71,6 +74,7 @@ body {
     display: flex;
     justify-content: center;
     margin: 0 auto;
+    margin-top: 120px;
 }
 
 .nav-links:hover {
@@ -143,6 +147,14 @@ body {
     z-index: -1;
 }
 
+.drop__content-itemss:hover {
+    color: var(--black-color);
+}
+
+.drop__content-item:hover {
+    color: var(--black-color);
+}
+
 .drop__content-itemss {
     font-size: 16px;
     line-height: 70px;
@@ -161,7 +173,6 @@ body {
     border: none;
     border-radius: 50%;
     background: #ABABAB;
-    ;
 }
 
 .carousel-indicators [data-bs-target].active {
@@ -279,6 +290,24 @@ body {
     margin-top: 30px;
 }
 
+.main__phone-title {
+    width: 100%;
+    height: 100%;
+    top: 230px;
+}
+
+.main__comp-title {
+    width: 100%;
+    height: 100%;
+    top: 230px;
+}
+
+.main__seller-title {
+    width: 100%;
+    height: 100%;
+    top: 230px;
+}
+
 .content__title:nth-of-type(1) {
     margin-top: 20px;
     margin-left: 20px;
@@ -287,6 +316,90 @@ body {
 .content__title {
     margin-top: 20px;
     margin-left: 20px;
+}
+.main__cellphone-item1:hover{
+    border: 1px solid #F9F9F9;
+box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+}
+.main__cellphone-item2:hover{
+    border: 1px solid #F9F9F9;
+box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+
+}
+.main__cellphone-item3:hover{
+    border: 1px solid #F9F9F9;
+box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+
+}
+.main__cellphone-item4:hover{
+    border: 1px solid #F9F9F9;
+box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+
+}
+.main__comp-item1, .main__comp-item2, .main__comp-item3, .main__comp-item4{
+    transition: 0.5s;
+}
+.main__comp-item1:hover, .main__comp-item2:hover, .main__comp-item3:hover, .main__comp-item4:hover{
+    border: 1px solid #F9F9F9;
+box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+
+}
+.main__seller-item1:hover, .main__seller-item2:hover, .main__seller-item3:hover, .main__seller-item4:hover{
+    border: 1px solid #F9F9F9;
+box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+
+}
+
+
+
+
+.main__content-link {
+    color: var(--white-color);
+    background: var(--black-color);
+    padding: 6px 36px;
+    font-size: 14px;
+    line-height: 19px;
+    font-family: var(--noto-regular);
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.main__content-hidden{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main__content-icon::before{
+    content: '\f004';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    font-size: 17px;
+    opacity: 0;
+    display: flex;
+    justify-content: end;
+    padding: 15px;
+    transition: 0.5s;
+}
+.main__cellphone-item1,.main__cellphone-item2, .main__cellphone-item3, .main__cellphone-item4{
+    transition: 0.5s;
+}
+.main__seller-item1, .main__seller-item2, .main__seller-item3, .main__seller-item4{
+    transition: 0.5s;
+}
+
+
+
+.main__content-icon:hover::before{
+    color: var(--black-color);
+    opacity: 1;
+}
+
+
+.main__content-link:hover {
+    color: var(--white-color);
+
 }
 
 .main__title {
@@ -323,12 +436,12 @@ body {
 }
 
 .main__comp {
-    margin-top: 70px;
     margin-bottom: 30px;
 }
 
 .main__title {
     margin-bottom: 30px;
+    margin-top: 70px;
 }
 
 .main__comp-item {
@@ -336,9 +449,12 @@ body {
     width: 100%;
 }
 
+.main__btn {
+    margin-bottom: 70px;
+}
+
 .main__about-playstation {
     background: #F9F9F9;
-    margin-top: 70px;
 }
 
 .main__play-title {
@@ -368,16 +484,124 @@ body {
     background: var(--black-color);
     padding: 12px 40px;
 }
-.play__link:hover{
+
+.play__link:hover {
     color: var(--white-color);
 }
-.main__seller-item{
+
+.main__seller-item {
     max-width: 300px;
     width: 100%;
 }
-.main__seller{
-    margin-top: 70px;
+
+.main__seller {
     margin-bottom: 30px;
 }
 
 /* MAIN END */
+
+/* FOOTER START */
+.footer__content-icon1::before {
+    content: '\f3fe';
+}
+
+.footer__content-icon1:hover {
+    color: var(--white-color);
+}
+
+.footer__content-icon2:hover {
+    color: var(--white-color);
+}
+
+.footer__content-icon3:hover {
+    color: var(--white-color);
+}
+
+.footer__content-icon1 {
+    font-size: 40px;
+    color: var(--white-color);
+    margin-right: 25px;
+}
+
+.footer__content-icon2 {
+    font-size: 40px;
+    margin-right: 25px;
+    color: var(--white-color);
+}
+
+.footer__content-icon3 {
+    font-size: 40px;
+    color: var(--white-color);
+}
+
+.footer__content-icon2::before {
+    content: '\f09a';
+}
+
+.footer__content-icon3::before {
+    content: '\f16d';
+}
+
+.footer__content-title {
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--white-color);
+    font-family: var(--noto-regular);
+    margin-bottom: 5px;
+}
+
+.footer__bg {
+    background: var(--black-color);
+}
+
+.footer__content {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.forms-btn {
+    border-radius: 0;
+    max-width: 190px;
+    width: 100%;
+
+}
+
+.footer__button {
+    width: 520px;
+}
+
+.forms {
+    border-radius: 0;
+}
+
+.btn-outline-success {
+    color: var(--white-color);
+    border-color: var(--white-color);
+    font-size: 18px;
+    line-height: 25px;
+    font-family: var(--noto-regular);
+    text-align: center;
+}
+
+.btn-outline-success:hover {
+    background: var(--black-color);
+    border-color: var(--white-color);
+}
+
+.footer__last-link:hover {
+    color: var(--white-color);
+}
+
+.footer__last-link {
+    margin-right: 30px;
+    font-family: var(--noto-regular);
+    color: var(--white-color);
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.footer__last-title {
+    padding-bottom: 45px;
+}
+
+/* FOOTER END */
