@@ -8,19 +8,24 @@
     body {
         background: var(--primary-background);
     }
-    .header__nav-img::before{
+
+    .header__nav-img::before {
         content: url('../images/Logo-dark.png');
     }
-    .play__about-logo::before{
+
+    .play__about-logo::before {
         content: url('../images/play-sign-dark.png');
     }
+
     .nav__bg {
         background: var(--black-background);
     }
-    .dropdown-menu, .footer__bg{
+
+    .dropdown-menu,
+    .footer__bg {
         background: var(--black-background);
     }
-    
+
     .header__button {
         font-size: 14px;
         line-height: 19px;
@@ -37,40 +42,119 @@
         background-color: var(--primary-background);
         color: #BBBBBB;
     }
-    .header__items-link, .drop__content-item, .drop__content-itemss, .header__content-title, .main__title, .main__text, .main__price, .main__content-icon, .play__text {
+
+    .header__items-link, .drop__content-item, .drop__content-itemss, .header__content-title, .main__title, .main__text, .main__price, .main__content-icon, .play__text, .header__iphone-text, .header__iphone-price, .header__iphone-titles, .header__iphone-description, .main__playstation-title, .main__playstation-text{
         color: var(--primary-text-color);
     }
-    .header__items-link:hover, .drop__content-item:hover, .drop__content-itemss:hover{
+
+    .header__items-link:hover,
+    .drop__content-item:hover,
+    .drop__content-itemss:hover {
         color: var(--primary-text-color);
     }
-    .header__content-link, .main__btn, .main__content-link, .play__link{
+
+    .header__content-link, .main__playstation-link, .main__btn, .main__content-link, .play__link, .iphone__link-cart, .iphone__link-buy {
         border: 1px solid white;
     }
+
     .carousel-indicators [data-bs-target] {
         background: #ABABAB;
     }
-    .main__phone-img, .playstation-img, .header__content-img{
+
+    .main__phone-img,
+    .playstation-img {
         background: radial-gradient(45% 10% at 51% 68%, rgba(255, 255, 255, 0.2) 47%, rgba(49, 49, 49, 0) 100%);
     }
-    .main__content-icon:hover::before{
+
+    .main__content-icon:hover::before {
         color: var(--primary-text-color);
         opacity: 1;
     }
-    .main__content-icon::before{
+
+    .main__content-icon::before {
         opacity: 0;
         transition: 0.5s;
     }
-    .main__about-playstation{
+
+    .main__about-playstation {
         background: none;
     }
-    
+
     .carousel-indicators [data-bs-target].active {
-        background: var(--primary-text-color-color);
+        background: var(--primary-text-color);
+    }
+
+    .header__slider-img {
+        background: radial-gradient(29.86% 47.86% at 50% 50%, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 100%);
     }
 }
-@media(max-width:1400px){
-    .main__learn-items, .main__comp-items, .main__cellphone-items, .main__seller-items{
+
+@media(max-width:1400px) {
+
+    .main__play-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .main__cellphone-items, .main__comp-items, .main__seller-items{
         flex-wrap: wrap;
-        justify-content: space-between;
     }
+
 }
+@media(max-width:1240px){
+    .main__learn-item:nth-of-type(1) {
+        grid-column: span 4;
+        grid-row: span 2;
+}
+.main__learn-item:nth-of-type(2) {
+    grid-column: span 4;
+    grid-row: span 2;}
+    .main__learn-item:nth-of-type(3), .main__learn-item:nth-of-type(4) {
+        grid-column: span 2;
+    }
+    .main__about-playstation {
+        background: none;
+    }
+    .main__play-img{
+        display: flex;
+        flex-direction: column;
+    }
+ }
+ @media(max-width:1154px){
+     .play__text{
+         font-size: 42px;
+     }
+     .footer__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     }
+     
+     .footer__content-item{
+         margin: 10px 0;
+     }
+ }
+ @media(max-width:650px){
+     .header_form{
+         margin: 0 auto;
+     }
+     .header__input{
+         width: 290px;
+     }
+     .header__button{
+         width: 150px;
+         padding: 5px;
+     }
+     .main__learn-img{
+         width: 510px;
+     }
+     .learn__content-description {
+        font-size: 20px;
+        line-height: 20px;}
+ }
+ @media(max-width:600px){
+    .header__input{
+        width: 250px;
+    }
+ }

@@ -25,9 +25,11 @@ body {
 .nav__bg {
     background: var(--black-color);
 }
-.header__nav-img::before{
+
+.header__nav-img::before {
     content: url('../images/logo-light.png');
 }
+
 .header__toggler-icon::before {
     content: '\f0c9';
 }
@@ -60,9 +62,10 @@ body {
     color: var(--white-color);
 }
 
-.header__button::before{
+.header__button::before {
     content: '\f002';
 }
+
 .header__content-link {
     background: var(--black-color);
     color: var(--white-color);
@@ -141,6 +144,10 @@ body {
     color: var(--black-color);
 }
 
+/* .header__form{
+    margin-left: 100px;
+} */
+
 .header__items-link::after {
     color: var(--black-color);
     width: 260px;
@@ -169,27 +176,205 @@ body {
     text-decoration-line: underline !important;
 }
 
+
 .carousel-indicators [data-bs-target] {
-    width: 15px;
-    height: 15px;
-    border: none;
     border-radius: 50%;
-    background: #ABABAB;
+    width: 10px;
+    height: 10px;
+    background-color: #ABABAB;
+    transition: 0.5s;
+}
+
+.carousel-indicators [data-bs-target]:nth-of-type(1) {
+    margin-right: 25px;
 }
 
 .carousel-indicators [data-bs-target].active {
     background: var(--black-color);
 }
 
-.carousel-indicators {
-    bottom: -20px;
+/* HEADER END */
+
+
+
+/* ABOUTAPPLE PAGE START */
+/* phones start */
+.main__xbox-description {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.carousel-indicators:nth-of-type(1) [data-bs-target] {
+.main__xbox-title {
+    font-family: var(--noto-semibold);
+    color: var(--black-color);
+    font-size: 48px;
+    line-height: 65px;
+}
+
+.main__xbox-text {
+    font-family: var(--noto-regular);
+    color: var(--black-color);
+    font-size: 24px;
+    line-height: 33px;
+    max-width: 450px;
+    width: 100%;
+}
+.main__xbox-button{
+    color: var(--white-color);
+    background: var(--black-color);
+    font-family: var(--noto-regular);
+    font-size: 18px;
+    line-height: 25px;
+    padding: 13px 38px;
+}
+.main__xbox-button:hover{
+    color: var(--white-color);
+}
+.main__xbox-btn{
+    margin-bottom: 30px;
+}
+.main__xbox-content{
+    margin-bottom: 50px;
+}
+
+/* phones end */
+
+
+/* HEADER__ABOUTAPPLE START */
+
+.header__iphone-left {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+
+.header__iphone-item:nth-of-type(4) {
+    grid-row: span 3;
+    grid-column: span 1;
+}
+
+.header__iphone-description {
+    font-size: 14px;
+    line-height: 25px;
+    color: #000000;
+    font-family: var(--noto-regular);
+    letter-spacing: 0.05em;
+}
+
+.header__iphone-titles,
+.header__iphone-price {
+    color: #000000;
+    font-family: var(--noto-regular);
+    letter-spacing: 0.05em;
+    font-size: 24px;
+    line-height: 70px;
+    margin-bottom: 0%;
+}
+
+.header__iphone-text {
+    color: #000000;
+    font-family: var(--noto-semibold);
+    letter-spacing: 0.05em;
+    font-size: 30px;
+    line-height: 70px;
+    margin-bottom: 0%;
+}
+
+.iphone__link-buy {
+    color: var(--white-color);
+    background: var(--black-color);
+    font-size: 20px;
+    line-height: 70px;
+    letter-spacing: 0.05em;
+    font-family: var(--noto-regular);
+    padding: 13px 45px;
+}
+
+.span__iphone-icon::before {
+    content: '\f07a';
+}
+
+.iphone__link-buy:hover,
+.iphone__link-cart:hover {
+    color: var(--white-color);
+}
+
+.iphone__link-cart {
+    color: var(--white-color);
+    background: var(--black-color);
+    font-size: 20px;
+    line-height: 70px;
+    letter-spacing: 0.05em;
+    font-family: var(--noto-regular);
+    padding: 13px 45px;
     margin-right: 30px;
 }
 
-/* HEADER END */
+
+/* HEADER__ABOUTAPPLE END */
+
+/* MAIN__ABOUTAPPLE START */
+.main__playstation-link {
+    color: var(--white-color);
+    background: var(--black-color);
+    font-family: var(--noto-regular);
+    font-size: 18px;
+    line-height: 25px;
+    padding: 12px 39px;
+    margin-top: 60px;
+    margin-right: 80px;
+}
+
+.main__playstation-title {
+    font-family: var(--noto-semibold);
+    color: var(--black-color);
+    font-size: 48px;
+    line-height: 65px;
+    margin-right: 200px;
+    margin-bottom: 20px;
+}
+
+.main__iphone-playstation {
+    position: relative;
+    margin-top: 40px;
+}
+
+.main__playstation-text {
+    font-size: 24px;
+    line-height: 33px;
+    font-family: var(--noto-regular);
+    color: var(--black-color);
+    max-width: 450px;
+    width: 100%;
+    margin-right: -85px;
+}
+
+.main__playstation-content {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+/* MAIN__ABOUTAPPLE END */
+
+/* ABPUTAPPLE PAGE END */
+
+
+
+
+
+
 
 /* MAIN START */
 .main__learn-items {
@@ -273,16 +458,17 @@ body {
 
 
 .main__btn {
+    display: block;
     background: var(--black-color);
     color: var(--white-color);
+    width: 190px;
+    padding: 12px 0;
     text-align: center;
-    letter-spacing: 0.05em;
+    margin: 0 auto;
     font-size: 20px;
     line-height: 40px;
-    padding: 12px 0;
-    max-width: 190px;
-    width: 100%;
-    border-radius: none !important;
+    letter-spacing: 0.05em;
+    margin-bottom: 70px;
 }
 
 .main__button {
@@ -319,44 +505,107 @@ body {
     margin-top: 20px;
     margin-left: 20px;
 }
-.play__about-logo::before{
+
+.main__about-playstation {
+    position: relative;
+}
+
+.play__about-logo::before {
     content: url('../images/play-sign.png');
 }
-.main__cellphone-item1:hover{
+
+.main__cellphone-item1:hover {
     border: 1px solid #F9F9F9;
-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
 }
-.main__cellphone-item2:hover{
+
+.main__cellphone-item2:hover {
     border: 1px solid #F9F9F9;
-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
 
 }
-.main__cellphone-item3:hover{
+
+.main__cellphone-item3:hover {
     border: 1px solid #F9F9F9;
-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
 
 }
-.main__cellphone-item4:hover{
+
+.main__cellphone-item4:hover {
     border: 1px solid #F9F9F9;
-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
 
 }
-.main__comp-item1, .main__comp-item2, .main__comp-item3, .main__comp-item4{
+
+.main__comp-item1,
+.main__comp-item2,
+.main__comp-item3,
+.main__comp-item4 {
     transition: 0.5s;
 }
-.main__comp-item1:hover, .main__comp-item2:hover, .main__comp-item3:hover, .main__comp-item4:hover{
+
+.main__comp-item1:hover,
+.main__comp-item2:hover,
+.main__comp-item3:hover,
+.main__comp-item4:hover {
     border: 1px solid #F9F9F9;
-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
 
 }
-.main__seller-item1:hover, .main__seller-item2:hover, .main__seller-item3:hover, .main__seller-item4:hover{
+
+.main__seller-item1:hover,
+.main__seller-item2:hover,
+.main__seller-item3:hover,
+.main__seller-item4:hover {
     border: 1px solid #F9F9F9;
-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
 
 }
 
+.main__cellphone-item1:hover .main__content-link {
+    opacity: 1;
+}
 
+.main__cellphone-item2:hover .main__content-link {
+    opacity: 1;
+}
 
+.main__cellphone-item3:hover .main__content-link {
+    opacity: 1;
+}
+
+.main__cellphone-item4:hover .main__content-link {
+    opacity: 1;
+}
+
+.main__phone-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.main__comp-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.main__seller-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.main__cellphone-item1 {
+    cursor: pointer;
+    transition: 0.5s;
+}
 
 .main__content-link {
     color: var(--white-color);
@@ -366,16 +615,14 @@ box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
     line-height: 19px;
     font-family: var(--noto-regular);
     text-align: center;
-    overflow: hidden;
     margin-bottom: 20px;
+    opacity: 0;
 }
-.main__content-hidden{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.main__content-icon::before{
+
+
+.main__content-icon::before {
     content: '\f004';
+    color: var(--black-color);
     width: 100%;
     height: 100%;
     position: absolute;
@@ -387,19 +634,71 @@ box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
     padding: 15px;
     transition: 0.5s;
 }
-.main__cellphone-item1,.main__cellphone-item2, .main__cellphone-item3, .main__cellphone-item4{
-    transition: 0.5s;
-}
-.main__seller-item1, .main__seller-item2, .main__seller-item3, .main__seller-item4{
-    transition: 0.5s;
-}
 
-
-
-.main__content-icon:hover::before{
-    color: var(--black-color);
+.main__cellphone-item1:hover .main__content-icon::before {
     opacity: 1;
 }
+
+.main__cellphone-item2:hover .main__content-icon::before {
+    opacity: 1;
+}
+
+.main__cellphone-item3:hover .main__content-icon::before {
+    opacity: 1;
+}
+
+.main__cellphone-item4:hover .main__content-icon::before {
+    opacity: 1;
+}
+
+.main__comp-item1:hover .main__content-icon::before,
+.main__comp-item2:hover .main__content-icon::before,
+.main__comp-item3:hover .main__content-icon::before,
+.main__comp-item4:hover .main__content-icon::before {
+    opacity: 1;
+}
+
+.main__comp-item4:hover .main__content-link,
+.main__comp-item3:hover .main__content-link,
+.main__comp-item2:hover .main__content-link,
+.main__comp-item1:hover .main__content-link,
+.main__seller-item1:hover .main__content-link,
+.main__seller-item2:hover .main__content-link,
+.main__seller-item3:hover .main__content-link,
+.main__seller-item4:hover .main__content-link {
+    opacity: 1;
+}
+
+.main__seller-item4:hover .main__content-icon::before,
+.main__seller-item3:hover .main__content-icon::before,
+.main__seller-item2:hover .main__content-icon::before,
+.main__seller-item1:hover .main__content-icon::before {
+    opacity: 1;
+}
+
+.main__cellphone-item1,
+.main__cellphone-item2,
+.main__cellphone-item3,
+.main__cellphone-item4 {
+    transition: 0.5s;
+    padding-bottom: 50px;
+}
+
+.main__seller-item1,
+.main__seller-item2,
+.main__seller-item3,
+.main__seller-item4,
+.main__comp-item1,
+.main__comp-item2,
+.main__comp-item3,
+.main__comp-item4 {
+    transition: 0.5s;
+    padding-bottom: 50px;
+}
+
+
+
+
 
 
 .main__content-link:hover {
@@ -469,6 +768,7 @@ box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: absolute;
 }
 
 .play__text {
@@ -562,6 +862,8 @@ box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
 .footer__content {
     padding-top: 30px;
     padding-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
 }
 
 .forms-btn {
