@@ -43,7 +43,7 @@
         color: #BBBBBB;
     }
 
-    .header__items-link, .drop__content-item, .drop__content-itemss, .header__content-title, .main__title, .main__text, .main__price, .main__content-icon, .play__text, .header__iphone-text, .header__iphone-price, .header__iphone-titles, .header__iphone-description, .main__playstation-title, .main__playstation-text{
+    .header__items-link, .drop__content-item, .drop__content-itemss, .header__content-title, .main__title, .main__text, .main__price, .main__content-icon, .play__text, .header__iphone-text, .header__iphone-price, .header__iphone-titles, .header__iphone-description, .main__playstation-title, .main__playstation-text, .main__xbox-title, .main__xbox-text{
         color: var(--primary-text-color);
     }
 
@@ -60,7 +60,9 @@
     .carousel-indicators [data-bs-target] {
         background: #ABABAB;
     }
-
+    .main__xbox-button{
+        margin-left: 5px;
+    }
     .main__phone-img,
     .playstation-img {
         background: radial-gradient(45% 10% at 51% 68%, rgba(255, 255, 255, 0.2) 47%, rgba(49, 49, 49, 0) 100%);
@@ -133,6 +135,19 @@
      
      .footer__content-item{
          margin: 10px 0;
+     }
+     .header__toggler-icon::before {
+        content: '\f0c9';
+        font-size: 30px;
+    }
+ }
+ @media(max-width:750){
+     .play__text{
+         font-size: 40px;
+         line-height: 15px;
+     }
+     .main__seller-items, .main__cellphone-items, .main__comp-items{
+         justify-content: center !important;
      }
  }
  @media(max-width:650px){

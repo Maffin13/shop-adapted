@@ -17,7 +17,7 @@
     --noto-semibold: 'notosans-semibold';
 }
 
-body {
+body{
     background: #E5E5E5;
 }
 
@@ -179,8 +179,9 @@ body {
 
 .carousel-indicators [data-bs-target] {
     border-radius: 50%;
-    width: 10px;
-    height: 10px;
+    border: none;
+    width: 15px;
+    height: 15px;
     background-color: #ABABAB;
     transition: 0.5s;
 }
@@ -191,6 +192,8 @@ body {
 
 .carousel-indicators [data-bs-target].active {
     background: var(--black-color);
+    width: 18px;
+    height: 18px;
 }
 
 /* HEADER END */
@@ -241,23 +244,15 @@ body {
 .main__xbox-content{
     margin-bottom: 50px;
 }
-
+/* .main__xbox{
+    background: #E3E3E3;
+} */
 /* phones end */
 
 
 /* HEADER__ABOUTAPPLE START */
 
-.header__iphone-left {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 30px;
-}
 
-.header__iphone-item:nth-of-type(4) {
-    grid-row: span 3;
-    grid-column: span 1;
-}
 
 .header__iphone-description {
     font-size: 14px;
@@ -265,6 +260,7 @@ body {
     color: #000000;
     font-family: var(--noto-regular);
     letter-spacing: 0.05em;
+    list-style-type: disc;
 }
 
 .header__iphone-titles,
@@ -273,7 +269,7 @@ body {
     font-family: var(--noto-regular);
     letter-spacing: 0.05em;
     font-size: 24px;
-    line-height: 70px;
+    line-height: 50px;
     margin-bottom: 0%;
 }
 
@@ -315,8 +311,26 @@ body {
     padding: 13px 45px;
     margin-right: 30px;
 }
-
-
+.header__iphone-left{
+    display: flex;
+    margin-top: 30px;
+    margin-right: 50px;
+}
+.header__iphone-photos{
+ display: flex;
+ flex-direction: column;
+ align-items:flex-start ;
+ margin-top: 30px;
+}
+.header__iphone-img{
+    margin-bottom: 30px;
+}
+.header__iphone-photo{
+    margin-left: 30px;
+}
+.header__iphone-items{
+    display: flex;
+}
 /* HEADER__ABOUTAPPLE END */
 
 /* MAIN__ABOUTAPPLE START */
@@ -330,14 +344,18 @@ body {
     margin-top: 60px;
     margin-right: 80px;
 }
+.main__playstation-link:hover{
+    color: var(--white-color);
+}
 
 .main__playstation-title {
     font-family: var(--noto-semibold);
     color: var(--black-color);
     font-size: 48px;
     line-height: 65px;
-    margin-right: 200px;
-    margin-bottom: 20px;
+    text-align: left;
+    /* margin-right: 200px;
+    margin-bottom: 20px; */
 }
 
 .main__iphone-playstation {
@@ -358,11 +376,11 @@ body {
 .main__playstation-content {
     position: absolute;
     top: 0%;
+    right: 0;
     width: 100%;
-    height: 360px;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
     justify-content: center;
 }
 
@@ -480,7 +498,6 @@ body {
 
 .main__phone-title {
     width: 100%;
-    height: 100%;
     top: 230px;
 }
 

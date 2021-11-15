@@ -13,9 +13,6 @@
     <header class="header position-relative">
       <div class="nav__bg">
         <nav class="navbar navbar-expand-lg">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="header__toggler-icon fas"></span>
-          </button>
           <div class="container">
             <div class="container-fluid">
               <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavDropdown">
@@ -34,7 +31,7 @@
                 </div>
                 <ul class="header__nav-list d-flex mb-0">
                   <li class="icon-link">
-                  <a class="nav-link" aria-current="page" href="#"><span class="nav__icon-phone fas"></span>(907) 555-0101</a>
+                  <a class="nav-link" aria-current="page" href="tel:(907) 555-0101"><span class="nav__icon-phone fas"></span>(907) 555-0101</a>
                   </li>
                   <li class="icon-link">
                     <a class="nav-link" href="#"><span class="nav__icon-sign fal"></span>Sign in</a>
@@ -52,6 +49,11 @@
         <nav class="navbar">
           <div class="container-fluid justify-content-center">
             <a class="navbar-brand header__nav-img"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="header__toggler-icon fas" > </span>
+                </button>
             <form class="header__form d-flex">
               <input class="form-control header__input" type="search" placeholder="What are you looking for?" aria-label="Search" style="width: 440px;">
               <button class="btn link-light header__button far" type="submit" style="background:#313131;">SEARCH OUR STORE</button>
@@ -68,7 +70,7 @@
                 <div class="header__items-list">
                   <ul class="header__list d-flex justify-content-center align-items-center">
                     <li class="nav-item dropdown">
-                      <a class="header__items-link" href="#" id="navbarDropdownMenuLinks" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <a class="dropdown-toggle header__items-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Cell Phones & Tablets
                       </a>
                       <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="width: 300px;">
@@ -97,13 +99,13 @@
                       </ul>
                     </li>
                     <li>
-                      <a class="header__items-link" aria-current="page" href="#">Computers & Laptop</a>
+                      <a class="header__items-link" aria-current="page" href="#computers">Computers & Laptop</a>
                     </li>
                     <li>
                       <a class="header__items-link" href="#">TV & Video</a>
                     </li>
                     <li>
-                      <a class="header__items-link" href="#">Asseccories</a>
+                      <a class="header__items-link" href="#asseccories">Asseccories</a>
                     </li>
                     <li>
                       <a class="header__items-link" href="#">Home appliance</a>
@@ -267,7 +269,7 @@
     <div class="row">
       <div class="main__comp col-12 col-lg-6">
         <div class="container">
-          <h2 class="main__title">Computers & Laptop</h2>
+          <h2 class="main__title" id="computers">Computers & Laptop</h2>
           <div class="main__comp-items d-flex">
             <div class="main__comp-item1 position-relative">
               <img src="images/comp-item1.png" alt="" class="main__phone-img">
@@ -327,7 +329,7 @@
     <div class="row">
       <div class="main__seller col-12 col-lg-6">
         <div class="container">
-          <h2 class="main__title">Top seller</h2>
+          <h2 class="main__title" id="asseccories">Top seller</h2>
           <div class="main__seller-items d-flex">
             <div class="main__seller-item1 position-relative">
               <img src="images/seller1.png" alt="" class="main__phone-img">
