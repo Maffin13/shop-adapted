@@ -13,12 +13,9 @@
     <header class="header position-relative">
         <div class="nav__bg">
           <nav class="navbar navbar-expand-lg">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="header__toggler-icon fas"></span>
-            </button>
             <div class="container">
               <div class="container-fluid">
-                <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavDropdown">
+                <div class="collapse navbar-collapse div-collapse d-flex justify-content-end flex-wrap" id="navbarNavDropdown">
                   <div class="header__dropdown">
                     <ul class="navbar-nav">
                       <li class="nav-item dropdown">
@@ -68,7 +65,7 @@
                   <div class="header__items-list">
                     <ul class="header__list d-flex justify-content-center align-items-center">
                       <li class="nav-item dropdown">
-                        <a class="dropdown-toggle header__items-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="header__items-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           Cell Phones & Tablets
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="width: 300px;">
@@ -163,56 +160,56 @@
       </header>
    <main class="main">
      <div class="container">
-        <div class="main__learn-items">
-          <div class="main__learn-item">
-            <img src="images/learn-img1.png" alt="">
-            <div class="main__item-content">
-              <div class="content__title">
-                <p class="learn__content-percent">-57%</p>
-              </div>
-                <div class="learn__content">
-                  <h2 class="learn__content-description mb-0">Suunto SS050143000</h2>
-                  <p class="learn__content-price mb-0">70$</p>
-                </div>
+      <div class="main__learn-items">
+        <div class="main__learn-item">
+          <img src="images/learn-img1.png" alt="" class="main__learn-images">
+          <div class="main__item-content">
+            <div class="content__title">
+              <p class="learn__content-percent">-57%</p>
             </div>
-          </div>
-          <div class="main__learn-item">
-            <img src="images/learn-img2.png" alt="" class="main__learn-img">
-            <div class="main__item-content">
-              <div class="content__title">
-                <p class="learn__content-percent">-30%</p>
-              </div>
-                <div class="learn__content">
-                  <h2 class="learn__content-description mb-0">Airpods 2.1</h2>
-                  <p class="learn__content-price mb-0">95$</p>
-                </div>
+              <div class="learn__content">
+                <h2 class="learn__content-description mb-0">Suunto SS050143000</h2>
+                <p class="learn__content-price mb-0">70$</p>
               </div>
           </div>
-          <div class="main__learn-item">
-            <img src="images/learn-img3.png" alt="">
-            <div class="main__item-content">
-                <div class="learn__content">
-                  <h2 class="learn__content-description mb-0">Xiaomi Mi Power Bank 2s 10000</h2>
-                  <p class="learn__content-price mb-0">9$</p>
-                </div>
-                <div class="content__title">
-                  <p class="learn__content-percent">-20%</p>
-                </div>
+        </div>
+        <div class="main__learn-item">
+          <img src="images/learn-img2.png" alt="" class="main__learn-images">
+          <div class="main__item-content">
+            <div class="content__title">
+              <p class="learn__content-percent">-30%</p>
             </div>
-          </div>
-          <div class="main__learn-item">
-            <img src="images/learn-img4.png" alt="">
-            <div class="main__item-content">
-                <div class="learn__content mb-0">
-                  <h2 class="learn__content-description mb-0">Remax RP-W1 White</h2>
-                  <p class="learn__content-price mb-0">11$</p>
-                </div>
-              <div class="content__title">
-                <p class="learn__content-percent">-10%</p>
+              <div class="learn__content">
+                <h2 class="learn__content-description mb-0">Airpods 2.1</h2>
+                <p class="learn__content-price mb-0">95$</p>
               </div>
+            </div>
+        </div>
+        <div class="main__learn-item">
+          <img src="images/learn-img3.png" alt="" class="main__learn-images">
+          <div class="main__item-content">
+              <div class="learn__content">
+                <h2 class="learn__content-description mb-0">Xiaomi Mi Power Bank 2s 10000</h2>
+                <p class="learn__content-price mb-0">9$</p>
+              </div>
+              <div class="content__title">
+                <p class="learn__content-percent">-20%</p>
+              </div>
+          </div>
+        </div>
+        <div class="main__learn-item">
+          <img src="images/learn-img4.png" alt="" class="main__learn-images">
+          <div class="main__item-content">
+              <div class="learn__content mb-0">
+                <h2 class="learn__content-description mb-0">Remax RP-W1 White</h2>
+                <p class="learn__content-price mb-0">11$</p>
+              </div>
+            <div class="content__title">
+              <p class="learn__content-percent">-10%</p>
             </div>
           </div>
         </div>
+      </div>  
       <div class="main__button">
         <button type="button" class="main__btn">LEARN MORE</button>
       </div>
@@ -368,7 +365,7 @@
       <div class="main__xbox">
         <div class="main__xbox-content position-relative">
           <div class="container">
-            <img src="images/xbox.png" alt="">
+            <img src="images/xbox.png" alt="" width="100%">
             <div class="main__xbox-description d-flex flex-column justify-content-between">
               <div class="main__xbox-top">
                <h2 class="main__xbox-title">Xbox Wireless Controller</h2>
@@ -414,5 +411,9 @@
       </div>
     </div>
   </footer>
+
+
+
+  <script src="libs/bootstrap.min.js"></script>
 </body>
 </html>

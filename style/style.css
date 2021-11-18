@@ -49,6 +49,9 @@ body{
     line-height: 19px;
     font-family: var(--noto-regular);
 }
+.header__slider-img{
+    width: 100%;
+}
 
 .header__content-title {
     color: var(--black-color);
@@ -144,17 +147,7 @@ body{
     color: var(--black-color);
 }
 
-/* .header__form{
-    margin-left: 100px;
-} */
 
-.header__items-link::after {
-    color: var(--black-color);
-    width: 260px;
-    height: 3px;
-    position: absolute;
-    z-index: -1;
-}
 
 .drop__content-itemss:hover {
     color: var(--black-color);
@@ -340,9 +333,12 @@ body{
     font-family: var(--noto-regular);
     font-size: 18px;
     line-height: 25px;
-    padding: 12px 39px;
+    padding: 12px 0;
+    max-width: 200px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
     margin-top: 60px;
-    margin-right: 80px;
 }
 .main__playstation-link:hover{
     color: var(--white-color);
@@ -353,9 +349,6 @@ body{
     color: var(--black-color);
     font-size: 48px;
     line-height: 65px;
-    text-align: left;
-    /* margin-right: 200px;
-    margin-bottom: 20px; */
 }
 
 .main__iphone-playstation {
@@ -368,16 +361,14 @@ body{
     line-height: 33px;
     font-family: var(--noto-regular);
     color: var(--black-color);
-    max-width: 450px;
+    max-width: 500px;
     width: 100%;
-    margin-right: -85px;
 }
 
 .main__playstation-content {
     position: absolute;
     top: 0%;
-    right: 0;
-    width: 100%;
+    right: 30px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -400,6 +391,9 @@ body{
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 30px;
+}
+.main__learn-images{
+    width: 100%;
 }
 
 .main__item-content {

@@ -59,6 +59,7 @@
 
     .carousel-indicators [data-bs-target] {
         background: #ABABAB;
+        margin-bottom: -40px;
     }
     .main__xbox-button{
         margin-left: 5px;
@@ -84,6 +85,7 @@
 
     .carousel-indicators [data-bs-target].active {
         background: var(--primary-text-color);
+        margin-bottom: -40px;
     }
 
     .header__slider-img {
@@ -102,6 +104,9 @@
     .main__cellphone-items, .main__comp-items, .main__seller-items{
         flex-wrap: wrap;
     }
+    .content__title{
+        margin-top: 0;
+    }
 
 }
 @media(max-width:1240px){
@@ -109,28 +114,57 @@
         grid-column: span 4;
         grid-row: span 2;
 }
-.main__learn-item:nth-of-type(2) {
-    grid-column: span 4;
-    grid-row: span 2;}
+.header__content-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ .main__learn-item:nth-of-type(1), .main__learn-item:nth-of-type(2){
+    grid-column: span 2;
+    grid-row: span 1;
+ }
+
     .main__learn-item:nth-of-type(3), .main__learn-item:nth-of-type(4) {
         grid-column: span 2;
     }
     .main__about-playstation {
         background: none;
     }
-    .main__play-img{
+    .main__play-img, .main__playstation-image{
         display: flex;
         flex-direction: column;
     }
+    .header__iphone-items{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
  }
  @media(max-width:1154px){
-     .play__text{
+     .play__text, .header__content-title {
          font-size: 42px;
+     }
+     .main__learn-item:nth-of-type(1){
+         grid-row: span 1;
+     }
+     .header__content-itmes{
+         flex-wrap: wrap;
+     }
+     .header__content-right{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+     }
+     .header__content-link{
+         margin-top: 0;
      }
      .footer__content{
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+     }
+     .main__learn-item:nth-of-type(3), .main__learn-item:nth-of-type(4){
+         grid-column: span 2;
      }
      
      .footer__content-item{
@@ -140,14 +174,58 @@
         content: '\f0c9';
         font-size: 30px;
     }
+    .carousel-indicators [data-bs-target]{
+        margin-bottom: -60px;
+    }
+    .carousel-indicators [data-bs-target].active{
+        margin-bottom: -60px;
+    }
  }
- @media(max-width:750){
+ @media(max-width:768px){
+     .main__learn-items{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+     }
      .play__text{
          font-size: 40px;
          line-height: 15px;
      }
      .main__seller-items, .main__cellphone-items, .main__comp-items{
          justify-content: center !important;
+     }
+     .main__learn-item:nth-of-type(1), .main__learn-item:nth-of-type(4), .main__learn-item:nth-of-type(3){
+         width: 62%;
+     }
+     .main__xbox-title{
+         font-size: 35px;
+     }
+     .main__xbox-text{
+         display: none;
+     }
+     .main__learn-item:nth-of-type(2){
+         height: 250px;
+         width: 62%;
+     }
+     .main__iphone-playstation{
+        margin-bottom: 50px;
+     }
+     .header__content-items{
+         flex-wrap: wrap;
+     }
+     .content__title{
+         margin-left: 10px;
+         margin-top: 0;
+     }
+     .learn__content-percent{
+        line-height: 50px;
+        max-width: 50px;
+        width: 100%;
+        font-size: 15px;
+     }
+     .main__xbox-button{
+         padding: 10px;
+         font-size: 15px;
      }
  }
  @media(max-width:650px){
@@ -167,9 +245,156 @@
      .learn__content-description {
         font-size: 20px;
         line-height: 20px;}
+        .main__playstation-text{
+            color: var(--primary-text-color);
+        }
+        .main__playstation-link{
+            margin-top: 0;
+        }
+        .header__iphone-left{
+            margin-right: 0;
+        }
+        .header__iphone-photo{
+            margin-left: 0;
+        }
  }
  @media(max-width:600px){
     .header__input{
-        width: 250px;
+        width: 250px !important;
     }
+    .header__iphone-text{
+        line-height: 50px;
+    }
+    .header__uphone-description{
+        font-size: 13px;
+    }
+    .iphone__link-cart, .iphone__link-buy{
+        padding: 10px 30px;
+    }
+    .main__playstation-link{
+        max-width: 160px;
+        width: 100%;
+    }
+    .forms-btn{
+        max-width: 150px !important;
+        width: 100%;
+    }
+    .forms{
+        max-width: 200px;
+        width: 100%;
+    }
+    .footer__button{
+        width: 300px;
+    }
+    .play__text{
+        font-size: 35px;
+    }
+    .play__link{
+        margin-top: 20px;
+        margin-left: 0;
+    }
+ }
+ @media(max-width:580px){
+     .header__iphone-left{
+         display: block;
+     }
+     .header__iphone-photos{
+         display: flex;
+         flex-direction: row;
+         justify-content: space-around;
+     }
+     .play__text{
+         font-size: 25px;
+     }
+     .header__nav-list{
+         justify-content: center !important;
+         padding-left: 0;
+         flex-wrap: wrap;
+     }
+     .main__xbox-button{
+        padding: 5px;
+        font-size: 13px;
+    }
+    .main__xbox-title, .header__content-title{
+        font-size: 25px;
+    }
+     .div-collapse{
+         justify-content: center !important;
+     }
+ }
+ @media(max-width:400px){
+     .main__playstation-title{
+         margin-bottom: 0;
+         font-size: 35px;
+     }
+     .main__learn-item:nth-of-type(1), .main__learn-item:nth-of-type(2), .main__learn-item:nth-of-type(3), .main__learn-item:nth-of-type(4){
+         width: 75%;
+     }
+     .main__playstation-text{
+         font-size: 20px;
+         line-height: 20px;
+     }
+     .main__playstation-link{
+         font-size: 15px;
+         line-height: 20px;
+         padding: 8px 0;
+     }
+     .footer__content{
+         padding-bottom: 20px;
+     }
+     .iphone__link-cart, .iphone__link-buy{
+        font-size: 15px;
+        line-height: 20px;
+        padding: 8px 12px;
+     }
+     .header__button{
+         max-width: 100px;
+         width: 100%;
+         font-size: 13px !important;
+    }
+    .header__content-link{
+        max-width: 110px;
+        width: 100%;
+        font-size: 15px;
+    }
+    .play__link{
+        padding: 10px;
+        font-size: 15px;
+    }
+    .main__learn-item:nth-of-type(1), .main__learn-item:nth-of-type(2){
+        height: 235px;
+    }
+    .header__content-title{
+        font-size: 35px;
+    }
+    .header__iphone-img{
+        width: 20%;
+    }
+    .header__iphone-image{
+        width: 80%;
+    }
+    .forms-btn{
+        font-size: 13px;
+        max-width: 100px;
+        width: 100%;
+    }
+    .footer__content-icon1, .footer__content-icon2, .footer__content-icon3 {
+        font-size: 35px;
+        margin-right: 15px;
+    } 
+    .footer__last-title{
+        padding-bottom: 20px;
+    }
+    .footer__last-link{
+        font-size: 15px;
+    }
+    .main__iphone-playstation{
+        margin: 50px 0;
+    }
+ }
+ @media(max-width:350px){
+     .header__input{
+         max-width: 190px;
+         width: 100%;
+     }
  }
